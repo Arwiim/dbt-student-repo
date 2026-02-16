@@ -1,0 +1,68 @@
+[0m16:16:12.925476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109aeaf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0ef610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b0ef750>]}
+
+
+============================== 16:16:12.928073 | 115d51a8-883e-493b-885b-35fda1114799 ==============================
+[0m16:16:12.928073 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:16:12.928396 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'introspect': 'True', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'static_parser': 'True', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'quiet': 'False', 'log_cache_events': 'False', 'debug': 'False', 'target_path': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/gabi/.dbt', 'version_check': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init --skip-profile-setup airbnb', 'printer_width': '80'}
+[0m16:16:12.967056 [info ] [MainThread]: Creating dbt configuration folder at /Users/gabi/.dbt
+[0m16:16:12.968691 [debug] [MainThread]: Starter project path: /Users/gabi/Documents/dbt-student-repo/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m16:16:12.973039 [info ] [MainThread]: 
+Your new dbt project "airbnb" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:16:12.976055 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.09776404, "process_in_blocks": "0", "process_kernel_time": 0.139434, "process_mem_max_rss": "114475008", "process_out_blocks": "0", "process_user_time": 0.822729}
+[0m16:16:12.976392 [debug] [MainThread]: Command `dbt init` succeeded at 16:16:12.976330 after 0.10 seconds
+[0m16:16:12.976595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b224050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b21fd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10af63ac0>]}
+[0m16:16:12.976791 [debug] [MainThread]: Flushing usage events
+[0m16:16:13.947494 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:18:07.186608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a70ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd13610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd13750>]}
+
+
+============================== 16:18:07.189357 | 70f97e52-b48b-41c4-826d-3ce3403d37f3 ==============================
+[0m16:18:07.189357 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:18:07.189680 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'write_json': 'True', 'warn_error': 'None', 'version_check': 'True', 'quiet': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'use_colors': 'True', 'debug': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'profiles_dir': '/Users/gabi/.dbt', 'cache_selected_only': 'False', 'printer_width': '80', 'introspect': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'partial_parse': 'True', 'log_format': 'default'}
+[0m16:18:07.199327 [info ] [MainThread]: dbt version: 1.11.2
+[0m16:18:07.199559 [info ] [MainThread]: python version: 3.13.5
+[0m16:18:07.199699 [info ] [MainThread]: python path: /Users/gabi/Documents/dbt-student-repo/.venv/bin/python
+[0m16:18:07.199832 [info ] [MainThread]: os info: macOS-26.2-arm64-arm-64bit-Mach-O
+[0m16:18:07.199966 [info ] [MainThread]: Using profiles dir at /Users/gabi/.dbt
+[0m16:18:07.200086 [info ] [MainThread]: Using profiles.yml file at /Users/gabi/.dbt/profiles.yml
+[0m16:18:07.200205 [info ] [MainThread]: Using dbt_project.yml file at /Users/gabi/Documents/dbt-student-repo/dbt_project.yml
+[0m16:18:07.200334 [info ] [MainThread]: Configuration:
+[0m16:18:07.200454 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m16:18:07.200572 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:18:07.200687 [info ] [MainThread]: Required dependencies:
+[0m16:18:07.200844 [debug] [MainThread]: Executing "git --help"
+[0m16:18:07.215720 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:18:07.216293 [debug] [MainThread]: STDERR: "b''"
+[0m16:18:07.216484 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:18:07.216656 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m16:18:07.217039 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:18:07.217242 [info ] [MainThread]: dbt looked for a profiles.yml file in /Users/gabi/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:18:07.217404 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/gabi/Documents/dbt-student-repo/dbt_project.yml> not found
+
+[0m16:18:07.218988 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.078505, "process_in_blocks": "0", "process_kernel_time": 0.124172, "process_mem_max_rss": "111624192", "process_out_blocks": "0", "process_user_time": 0.789765}
+[0m16:18:07.219310 [debug] [MainThread]: Command `dbt debug` failed at 16:18:07.219257 after 0.08 seconds
+[0m16:18:07.219608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd1ec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbcb650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdd07c0>]}
+[0m16:18:07.219842 [debug] [MainThread]: Flushing usage events
+[0m16:18:08.059086 [debug] [MainThread]: An error was encountered while trying to flush usage events

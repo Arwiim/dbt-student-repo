@@ -31,4 +31,27 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   airbnb:
-
+    # El símbolo '+' antes de una configuración indica que esta se aplicará
+    # a TODOS los modelos dentro de esta carpeta Y TAMBIÉN a todas las subcarpetas.
+    # Sin '+' la configuración solo aplica a los modelos directos de esa carpeta.
+    # Ejemplo: +materialized se hereda a src/, dim/, fct/, etc.
+    +materialized: view
+    
+    # EJEMPLO SIN '+':
+    # materialized: view  
+    # ❌ Solo aplicaría a archivos .sql directamente en models/ (no existen en este proyecto)
+    # ❌ NO aplicaría a models/src/src_hosts.sql
+    # ❌ NO aplicaría a models/dim/dim_hosts_cleansed.sql
+    #
+    # CON '+':
+    # +materialized: view
+    # ✅ Aplica a models/src/src_hosts.sql
+    # ✅ Aplica a models/dim/dim_hosts_cleansed.sql
+    # ✅ Aplica a todas las subcarpetas (src/, dim/, fct/, etc.)
+    
+    dim:
+      # Aquí se pueden colocar configuraciones específicas para los modelos dentro de la carpeta dim/
+      +materialized: table
+    src:
+      # Aquí se pueden colocar configuraciones específicas para los modelos dentro de la carpeta src/
+      +materialized: ephemeral

@@ -17,3 +17,6 @@ Try running the following commands:
 
 dbt seed -> Populate only seed folder to snowflake (make a parse automatically in DBT to gues the schema)
 dbt compile -> compile full proyect DBT and review every model to work properly
+dbt source freshness -> check data freschness in models.
+      warn_after: {count: 1, period: hour}   # ⚠️ WARNING si no hay datos nuevos en 1 hora
+      #error_after: {count: 24, period: hour} # ❌ ERROR si no hay datos nuevos en 24h (desactivado)

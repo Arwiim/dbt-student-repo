@@ -1,0 +1,8 @@
+snapshots:
+  - name: scd_raw_listings
+    relation: source('airbnb', 'listings')
+    config:
+      unique_key: id
+      strategy: timestamp
+      updated_at: updated_at
+      hard_deletes: invalidate # what is? This option determines how dbt handles rows that are deleted from the source table. "invalidate" means that when a row is deleted in the source, it will be marked as invalid in the snapshot rather than being physically removed.

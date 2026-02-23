@@ -55,3 +55,8 @@ models:
     src:
       # Aquí se pueden colocar configuraciones específicas para los modelos dentro de la carpeta src/
       +materialized: ephemeral
+
+data_tests:
+  # Aquí se pueden colocar configuraciones específicas para los tests de datos
+  +store_failures: true # Configuración para almacenar los registros que fallan los tests de datos (crea una tabla de snowflake con los registros que no pasan los tests)
+  schema: _data_test_failures # Esquema donde se almacenarán las tablas con los registros que fallan los tests de datos

@@ -1,7 +1,12 @@
 models:
   - name: dim_listings_cleansed
+    data_tests:
+      - minimum_row_count:
+          arguments:
+            min_row_count: 1000
+          severity: warn #complete the test with a warning if the test fails, instead of an error (default)
+          #severity: error #complete the test with an error if the test fails (default)
     columns:
-
      - name: listing_id
        data_tests:
          - unique
